@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.background{
+    position: relative;
+    z-index: 0;
+    height: 750px;
+    width: 1250px;
+    margin-left: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 750px;
+    width: 240px;
+    background: #FFDBC3;
+    padding: 6px 14px;
+}
+.logo .logo_name {
+    font-size: 27px;
+    text-align: center;
+    background: #E25E3E;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.nav_list {
+    font-size: 25px;
+}
+.sidebar ul {
+    margin-top: 20px;
+}
+.sidebar ul li {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+    border-radius: 12px;
+}
+.sidebar ul li a {
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+.sidebar ul li a i {
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar ul li a:hover{
+    background: #FF9B50;
+    color: #C63D2F;
+}
+.sidebar .guru{
+    width: 370px;
+    margin-top: 90px;
+}
+h1 {
+    background-color: #C63D2F;
+    text-align: center;
+    height: 90px;
+    width: 600px;
+    padding: 10px;
+    margin-left: 240px;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    bottom: 720px;
+    left: 340px;
+    border-radius: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+.container{
+    background-color: #C63D2F;
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    margin: 40px;
+    border-radius: 20px;
+    bottom: 700px;
+    left: 470px;
+}
+table{
+    font-size: 25px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+input {
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 20px;
+    margin-top: 0;
+    font-size: 23px;
+    text-indent: 50px;
+}
+h3{
+    font-size: 24px;
+    margin: 10px;
+    padding-top: 10px;
+}
+.content{
+    align-items: center;
+}
+button{
+    font-size: 20px;
+    margin: 12px;
+    border-radius: 20px;
+    border: none;
+}
+#hitung1{
+    padding: 10px;
+    background-color: #E25E3E;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+}
+#hitung1:hover{
+    background: #FF9B50;
+}
+#reset{
+    padding: 10px;
+    background-color: #E25E3E;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+}
+#reset:hover{
+    background: #FF9B50;
+}
+.container1{
+    background-color: #C63D2F;
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    margin: 40px;
+    border-radius: 20px;
+    bottom: 1140px;
+    left: 970px;
+}
+.content1 {
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+}
+.luas{
+    font-size: 24px;
+    margin: 20px;
+    padding-top: 20px;
+}
+.labelName2{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.isiLuas{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+#hitung2{
+    padding: 10px;
+    background-color: #E25E3E;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+    margin-top: 0px;
+    border: none;
+}
+#hitung2:hover{
+    background: #FF9B50;
+}
+#reset2{
+    padding: 10px;
+    background-color: #E25E3E;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+    border: none;
+}
+#reset2:hover{
+    background: #FF9B50;
+}
+.kalkulator{
+    position: relative;
+    z-index: 4;
+    width: 110px;
+    left: 520px;
+    bottom: 1740px;
+}

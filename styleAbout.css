@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.background{
+    position: relative;
+    z-index: 0;
+    height: 750px;
+    width: 1250px;
+    margin-left: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:  750px;
+    width: 240px;
+    background: #FFDBC3;
+    padding: 6px 14px;
+}
+.logo .logo_name {
+    font-size: 27px;
+    text-align: center;
+    background: #E25E3E;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.nav_list {
+    font-size: 25px;
+}
+.sidebar ul {
+    margin-top: 20px;
+}
+.sidebar ul li {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+    border-radius: 12px;
+}
+.sidebar ul li a {
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+.sidebar ul li a i {
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar ul li a:hover{
+    background: #FF9B50;
+    color: #C63D2F;
+}
+.sidebar .guru{
+    width: 370px;
+    margin-top: 90px;
+}
+h1 {
+    background-color: #e25f3ee3;
+    text-align: center;
+    height: 70px;
+    width: 600px;
+    padding: 10px;
+    margin-left: 220px;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    bottom: 205px;
+    left: 310px;
+    border-radius: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+.student{
+    bottom: 770px;
+    position: relative;
+    width: 250px;
+    left: 700px;
+}
+.nama{
+    margin-left: 690px;
+    width: 440px;
+    height: 70px;
+    position: relative;
+    bottom: 760px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.sosmedLogo ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    z-index: 4;
+}
+.sosmed {
+    position: relative;
+    z-index: 4;
+    width: 30px;
+    margin: 30px;
+    bottom: 820px;
+    left: 700px;
+}
+.sekolah {
+    left: 670px;
+    width: 450px;
+    height: 70px;
+    position: relative;
+    bottom: 795px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.sekolah a{
+    text-decoration: none;
+}
+.isi {
+    left: 400px;
+    width: 900px;
+    height: 70px;
+    position: relative;
+    bottom: 830px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}

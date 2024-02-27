@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleKalkulatorSegitiga.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!--judul-->
+        <img src="bg.png" class="background">
+        <h1>Menghitung Keliling dan Luas Segitiga</h1>
+<!--sidebar-->
+    <div class="sidebar">
+            <div class="logo">
+                <div class="logo_name">Matematika Hebat</div>
+            </div>
+        <ul class="nav_list">
+            <li>
+                <a href="beranda.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="kalkulatorSegitiga.html">
+                    <i class='bx bxs-calculator'></i>
+                    <span class="links_name">Kalkulator</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">About</span>
+                </a>
+            </li>
+        </ul>
+        <div class="footer">
+            <div class="decoration">
+                <img src="mix.png" class="guru">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Menghitung Keliling Segitiga</h3>
+        <div class="content">
+    <table>
+            <tr>
+            <td>Sisi a</td>
+            <td><input type="text" id="a"></td>
+        </tr>
+        <tr>
+            <td>Sisi b</td>
+            <td><input type="text" id="b"></td>
+        </tr>
+        <tr>
+            <td>Sisi c</td>
+            <td><input type="text" id="c"></td>
+        </tr>
+        <tr>
+            <td>Hasil</td>
+            <td><input type="text" id="hasil1" disabled></td>
+        </tr>
+    </table>
+            <button id="hitung1">Hitung</button>
+            <button id="reset">Reset</button>
+            </div>
+                <script>
+                    const a = document.getElementById('a');//deklarasi variabel "a" yg digunakan untuk mengambil elemen html dg id
+                    const b = document.getElementById('b');
+                    const c = document.getElementById('c');
+                    const hasilElem = document.getElementById('hasil1');
+                    const buttonHitung = document.getElementById('hitung1');
+                    const buttonReset = document.getElementById('reset');
+                    buttonHitung.addEventListener('click', function(){
+                        let d = parseFloat(a.value); //parseFloat digunakan untuk mengambil nilai dari input text dan mengonversinya menjadi angka desimal
+                        let e = parseFloat(b.value);
+                        let f = parseFloat(c.value);
+                        let hasil = d + e + f;
+                        hasilElem.value = hasil;
+                    });
+                    buttonReset.addEventListener('click' , function(){
+                        a.value = "";
+                        b.value = "";
+                        c.value = "";
+                        hasilElem.value = "";
+                    });
+                </script>
+            </div>
+            <div class="container1">
+                <h3 class="luas">Menghitung Luas Segitiga</h3>
+                <div class="content1">
+                    <table>
+                        <tr>
+                            <td>Alas</td>
+                            <td><input type="text" id="alas"></td>
+                        </tr>
+                        <tr>
+                            <td>Tinggi</td>
+                            <td><input type="text" id="tinggi"></td>
+                        </tr>
+                        <tr>
+                            <td>Hasil</td>
+                            <td><input type="text" id="hasil2" disabled></td>
+                    </table>
+                    </div>
+                    <button id="hitung2">Hitung</button>
+                    <button id="reset2">Reset</button>
+                </div>
+                        <script>
+                            const alas = document.getElementById('alas');
+                            const tinggi = document.getElementById('tinggi');
+                            const hasilElem2 = document.getElementById('hasil2');
+                            const buttonHitung2 = document.getElementById('hitung2');
+                            const buttonReset2 = document.getElementById('reset2');
+                            buttonHitung2.addEventListener('click', function(){
+                                let h = alas.value;
+                                let t = tinggi.value;
+                                let hasil2 = 0.5*h*t;
+                                hasilElem2.value = hasil2;
+                            });
+                            buttonReset2.addEventListener('click' , function(){
+                                alas.value = "";
+                                tinggi.value = "";
+                                hasilElem2.value = "";
+                            });
+                        </script>
+                    </div>
+                    <img src="calculator (1).png" class="kalkulator">
+</body>
+</html>
